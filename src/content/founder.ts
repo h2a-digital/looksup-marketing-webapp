@@ -2,11 +2,11 @@ export const founder = {
   name: 'Hakim',
   title: 'Founder',
   portrait: '/images/profile-photo.jpg',
-  intro: 'Hey 👋 I am Hakim, the builder behind GenKid.',
+  intro: 'Hey 👋 I am Hakim, the builder behind LooksUP.',
   paragraphs: [
-    'The idea came from couples who wanted a tasteful, realistic way to imagine their future family without gimmicks.',
-    'We built GenKid to keep the process simple: upload two parent photos, tune influence, pick a gender, and generate a portrait you can save.',
-    'Every result lives in your Baby Room with a short summary and inherited-feature highlights so the story feels personal.',
+    'The idea came from people who wanted appearance feedback that felt concrete, not vague motivation or random advice.',
+    'We built LooksUP to keep the process simple: upload front and side selfies, get a score in seconds, and see exactly what to improve next.',
+    'Every result is designed to connect analysis with action: category breakdowns, custom routines, daily to-dos, haircut tracking, and progress over time.',
   ],
   ps: 'If you have ideas or feedback, I read every message at support@h2adigital.com.',
   links: {

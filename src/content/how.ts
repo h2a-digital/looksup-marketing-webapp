@@ -1,26 +1,26 @@
 export const how = [
   {
     number: 1,
-    title: 'Upload Photos',
+    title: 'Upload Selfies',
     description:
-      'Add clear, front-facing photos of both parents. The better the photos, the better your results.',
+      'Add clear front and side selfies with good lighting so the model can assess your face, hair, and proportions accurately.',
   },
   {
     number: 2,
-    title: 'Adjust Settings',
+    title: 'Run the Analysis',
     description:
-      "Set parent influence levels, choose the baby's gender, and select the baby age before generation.",
+      'LooksUP analyzes your appearance in seconds and produces an overall score, a potential score, and category-level insights.',
   },
   {
     number: 3,
-    title: 'Generate Portrait',
+    title: 'Review the Breakdown',
     description:
-      'Our AI creates a realistic baby portrait in seconds, blending features from both parents naturally.',
+      'Review skin, hair, jawline, eyes, eyebrows, symmetry, proportions, and photo presence so you know what to improve first.',
   },
   {
     number: 4,
-    title: 'Save & Share',
+    title: 'Follow the Plan',
     description:
-      'Store unlimited portraits in your Baby Room. Download, share with family, or generate variations.',
+      'Complete daily to-do actions, follow custom routines, and track progress as your habits and appearance improve over time.',
   },
 ];

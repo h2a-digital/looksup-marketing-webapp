@@ -1,44 +1,44 @@
 export const features = [
   {
     icon: '📸',
-    title: 'Easy Photo Upload',
+    title: 'Front + Side Selfies',
     description:
-      'Simply upload clear photos of both parents. Our AI works best with front-facing portraits with good lighting.',
+      'Upload clear front and side selfies so LooksUP can read your face shape, hair, and overall appearance from the angles that matter.',
   },
   {
-    icon: '⚖️',
-    title: 'Adjustable Influence',
+    icon: '🧠',
+    title: 'Overall + Potential Score',
     description:
-      "Fine-tune which parent's features are more prominent. Slide to find the perfect blend of both parents.",
+      'See your current score and your potential score side by side to understand where you stand and how far you can improve.',
   },
   {
-    icon: '👶',
-    title: 'Gender & Age Selection',
+    icon: '🧭',
+    title: 'Category Breakdown',
     description:
-      "Choose the baby's gender, select the baby age before generation, or let our AI surprise you with the most likely outcome.",
+      'Review scores across skin, hair, jawline, eyes, eyebrows, symmetry, proportions, and photo presence for a clearer picture.',
   },
   {
-    icon: '🧬',
-    title: 'Looks-Like Estimator',
+    icon: '✅',
+    title: 'Custom Routines',
     description:
-      'Estimate what percentage a baby looks like each parent with a simple side-by-side resemblance breakdown.',
+      'Get personalized routines for grooming, skincare, confidence, and the small appearance habits that compound over time.',
   },
   {
-    icon: '🎂',
-    title: 'Age Guess',
+    icon: '✂️',
+    title: 'Hair Analysis + Tracking',
     description:
-      "Upload a photo and let GenKid estimate a person's age in seconds.",
+      'Use hair analysis and haircut tracking to make better hairstyle decisions and keep a cleaner history of what works.',
   },
   {
-    icon: '🖼️',
-    title: 'Baby Room Gallery',
+    icon: '📈',
+    title: 'Progress Tracking',
     description:
-      'Save all your generated portraits in a private gallery. Download, share, or regenerate anytime you want.',
+      'Track improvements over time with before-and-after context, habit completion, and progress-focused guidance.',
   },
   {
     icon: '⚡',
-    title: 'Lightning Fast',
+    title: 'Instant AI Feedback',
     description:
-      'Get your baby portrait in under 30 seconds. No waiting, no complex setup—just instant results.',
+      'Get a complete analysis in seconds with no complex setup, so you can move straight into action.',
   },
 ];

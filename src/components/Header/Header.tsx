@@ -60,7 +60,7 @@ export function Header() {
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
         isScrolled || isMobileMenuOpen
-          ? 'bg-white/95 shadow-sm backdrop-blur-md'
+          ? 'border-b border-white/10 bg-[#05050A]/90 shadow-sm backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >
@@ -70,7 +70,7 @@ export function Header() {
           <Link
             href="/"
             onClick={handleLogoClick}
-            className="flex items-center gap-2 text-2xl font-bold text-gray-900 transition-colors hover:text-gray-700"
+            className="flex items-center gap-2 text-2xl font-bold text-white transition-colors hover:text-violet-300"
           >
             <Image
               src={'/images/icon.png'}
@@ -90,7 +90,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => scrollToSection(e, item.href)}
-                className="text-sm font-medium text-gray-700 transition-colors hover:text-black"
+                className="text-sm font-medium text-zinc-300 transition-colors hover:text-white"
               >
                 {item.label}
               </a>
@@ -98,7 +98,7 @@ export function Header() {
             <a
               href="#download"
               onClick={(e) => scrollToSection(e, '#download')}
-              className="rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white transition-all hover:scale-105 hover:bg-gray-800 active:scale-95"
+              className="rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-6 py-2.5 text-sm font-semibold text-white transition-all hover:scale-105 active:scale-95"
             >
               Download App
             </a>
@@ -107,7 +107,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-gray-900 lg:hidden"
+            className="p-2 text-white lg:hidden"
             aria-label="Toggle menu"
           >
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,14 +132,14 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="-mx-4 border-t border-gray-200 bg-white/95 px-4 py-4 shadow-md backdrop-blur-md sm:-mx-6 sm:px-6 lg:hidden">
+          <nav className="-mx-4 border-t border-white/10 bg-[#05050A]/95 px-4 py-4 shadow-md backdrop-blur-md sm:-mx-6 sm:px-6 lg:hidden">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
-                  className="text-base font-medium text-gray-700 hover:text-black"
+                  className="text-base font-medium text-zinc-300 hover:text-white"
                 >
                   {item.label}
                 </a>
@@ -147,7 +147,7 @@ export function Header() {
               <a
                 href="#download"
                 onClick={(e) => scrollToSection(e, '#download')}
-                className="rounded-full bg-black px-6 py-3 text-center text-base font-semibold text-white"
+                className="rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-6 py-3 text-center text-base font-semibold text-white"
               >
                 Download App
               </a>

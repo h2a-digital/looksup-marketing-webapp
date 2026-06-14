@@ -8,19 +8,19 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#F5F5F7] via-white to-[#EFEFF2]"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#0B0B12] via-[#09090F] to-[#05050A]"
     >
       {/* Animated background orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{ scale: [1, 1.2, 1], x: [0, 50, 0], y: [0, 30, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-black/5 blur-3xl"
+          className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-violet-600/20 blur-3xl"
         />
         <motion.div
           animate={{ scale: [1, 1.3, 1], x: [0, -30, 0], y: [0, -40, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-black/5 blur-3xl"
+          className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-fuchsia-500/10 blur-3xl"
         />
       </div>
 
@@ -37,22 +37,23 @@ export function Hero() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: 'spring', delay: 0.2 }}
-              className="mb-6 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 shadow-sm backdrop-blur-sm"
+              className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 shadow-lg backdrop-blur-xl"
             >
               <span className="text-2xl">✨</span>
-              <span className="text-sm font-semibold text-gray-900">AI-Powered Baby Portraits</span>
+              <span className="text-sm font-semibold text-white">AI Appearance Analysis</span>
             </motion.div>
 
-            <h1 className="mb-6 text-5xl leading-tight font-black text-gray-900 md:text-6xl lg:text-7xl">
-              See Your
+            <h1 className="mb-6 text-5xl leading-tight font-black text-white md:text-6xl lg:text-7xl">
+              Improve the way
               <br />
-              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                Future Baby
+              <span className="bg-gradient-to-r from-violet-300 via-white to-fuchsia-300 bg-clip-text text-transparent">
+                you look
               </span>
             </h1>
 
-            <p className="mx-auto mb-8 max-w-xl text-xl font-medium text-gray-600 md:text-2xl lg:mx-0">
-              AI blends two parent photos into a lifelike baby portrait in seconds.
+            <p className="mx-auto mb-8 max-w-xl text-xl font-medium text-zinc-300 md:text-2xl lg:mx-0">
+              Upload front and side selfies, get an overall score and potential score in seconds,
+              and follow a clear plan to improve over time.
             </p>
 
             <div className="mb-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
@@ -75,15 +76,15 @@ export function Hero() {
                     </span>
                   ))}
                 </div>
-                <span className="font-semibold text-gray-700">1M+ Generations</span>
+                <span className="font-semibold text-zinc-200">Score + routine guidance</span>
               </div>
               {/* <div className="flex items-center gap-2 text-gray-700">
                 <span className="text-xl">🔒</span>
                 <span className="font-semibold">100% Private</span>
               </div> */}
-              <div className="flex items-center gap-2 text-gray-700">
+              <div className="flex items-center gap-2 text-zinc-300">
                 <span className="text-xl">⚡</span>
-                <span className="font-semibold">30-Second Results</span>
+                <span className="font-semibold">Results in seconds</span>
               </div>
             </div>
           </motion.div>
@@ -96,18 +97,18 @@ export function Hero() {
             className="relative flex justify-center lg:justify-end"
           >
             <div className="relative w-[280px] sm:w-[320px]">
-              <div className="relative rounded-[3rem] bg-gray-900 p-3 shadow-2xl">
-                <div className="aspect-[9/19] overflow-hidden rounded-[2.5rem] bg-white">
+              <div className="relative rounded-[3rem] bg-[#11111A] p-3 shadow-2xl">
+                <div className="aspect-[9/19] overflow-hidden rounded-[2.5rem] bg-[#09090F]">
                   <Image
-                    src="/screenshots/home.PNG"
-                    alt="GenKid app preview with a generated baby portrait"
+                    src="/screenshots/scan_result.PNG"
+                    alt="LooksUP app preview with AI appearance analysis"
                     width={360}
                     height={760}
                     className="h-full w-full object-cover"
                     priority
                   />
                 </div>
-                <div className="absolute top-0 left-1/2 h-6 w-1/3 -translate-x-1/2 rounded-b-2xl bg-gray-900" />
+                <div className="absolute top-0 left-1/2 h-6 w-1/3 -translate-x-1/2 rounded-b-2xl bg-[#11111A]" />
               </div>
             </div>
           </motion.div>
@@ -124,7 +125,7 @@ export function Hero() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center gap-2 text-gray-400"
+          className="flex flex-col items-center gap-2 text-zinc-400"
         >
           <span className="text-xs font-semibold tracking-wider uppercase">Scroll</span>
           <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

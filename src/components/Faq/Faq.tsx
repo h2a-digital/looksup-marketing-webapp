@@ -24,10 +24,9 @@ export function Faq() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="relative overflow-hidden bg-white py-24"
+      className="relative overflow-hidden bg-[#05050A] py-24"
     >
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#F5F5F7] to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(124,58,237,0.12),transparent_30%)]" />
 
       <div className="relative mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -38,11 +37,11 @@ export function Faq() {
           className="mb-16 text-center"
         >
           <div className="mb-4 text-5xl">❓</div>
-          <h2 id="faq-heading" className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">
+          <h2 id="faq-heading" className="mb-4 text-4xl font-black text-white md:text-5xl">
             Questions, Answered
           </h2>
-          <p className="mx-auto max-w-2xl text-xl font-medium text-gray-600">
-            Everything you need to know before you generate.
+          <p className="mx-auto max-w-2xl text-xl font-medium text-zinc-400">
+            Everything you need to know before you upload your selfies.
           </p>
         </motion.div>
 
@@ -60,26 +59,26 @@ export function Faq() {
                 <div
                   className={`overflow-hidden rounded-3xl border-2 transition-all duration-300 ${
                     isOpen
-                      ? 'border-black/20 bg-[#F5F5F7] shadow-lg'
-                      : 'border-[#E5E5E7] bg-white hover:border-black/20 hover:shadow-md'
+                      ? 'border-violet-500/30 bg-[#11111A] shadow-lg'
+                      : 'border-white/10 bg-[#11111A] hover:border-violet-500/20 hover:shadow-md'
                   }`}
                 >
                   <button
                     onClick={() => toggleFaq(index)}
                     aria-expanded={isOpen}
                     aria-controls={`faq-answer-${index}`}
-                    className="flex w-full items-start justify-between gap-4 px-6 py-5 text-left focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 md:px-8 md:py-6"
+                    className="flex w-full items-start justify-between gap-4 px-6 py-5 text-left focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#05050A] md:px-8 md:py-6"
                   >
-                    <span className="flex-1 text-lg font-bold text-gray-900 md:text-xl">
+                    <span className="flex-1 text-lg font-bold text-white md:text-xl">
                       {item.q}
                     </span>
                     <div
                       className={`mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
-                        isOpen ? 'rotate-180 bg-black' : 'bg-[#E5E5E7]'
+                        isOpen ? 'rotate-180 bg-violet-600' : 'bg-white/10'
                       }`}
                     >
                       <svg
-                        className={`h-5 w-5 transition-colors ${isOpen ? 'text-white' : 'text-gray-600'}`}
+                        className={`h-5 w-5 transition-colors ${isOpen ? 'text-white' : 'text-zinc-400'}`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -100,7 +99,7 @@ export function Faq() {
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-6 text-base leading-relaxed text-gray-700 md:px-8 md:pb-8 md:text-lg">
+                    <div className="px-6 pb-6 text-base leading-relaxed text-zinc-400 md:px-8 md:pb-8 md:text-lg">
                       {item.a}
                     </div>
                   </motion.div>
@@ -118,10 +117,10 @@ export function Faq() {
           transition={{ delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="mb-4 text-lg text-gray-600">Still have questions?</p>
+          <p className="mb-4 text-lg text-zinc-400">Still have questions?</p>
           <a
             href="#support"
-            className="inline-flex items-center gap-2 rounded-full bg-black px-8 py-4 font-bold text-white transition-all duration-300 hover:scale-105 hover:bg-gray-900 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-95"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-8 py-4 font-bold text-white transition-all duration-300 hover:scale-105 focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#05050A] active:scale-95"
           >
             Get in Touch
             <span>→</span>

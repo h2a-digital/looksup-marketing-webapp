@@ -8,7 +8,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-200 bg-white py-12">
+    <footer className="border-t border-white/10 bg-[#05050A] py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 grid gap-8 md:grid-cols-4">
           {/* Brand */}
@@ -22,25 +22,25 @@ export function Footer() {
                 height={48}
                 className="h-12 w-12"
               />
-              <span className="text-xl font-bold text-gray-900">{site.app.name}</span>
+              <span className="text-xl font-bold text-white">{site.app.name}</span>
             </div>
-            <p className="max-w-sm text-gray-600">
-              Visualize your future family with AI-powered baby portraits. Private, secure, and
-              amazingly realistic.
+            <p className="max-w-sm text-zinc-400">
+              Analyze your appearance with AI, get actionable recommendations, and track your
+              progress over time.
             </p>
           </div>
 
           {/* Legal */}
           <div>
-            <h4 className="mb-4 font-bold text-gray-900">Legal</h4>
-            <ul className="space-y-3 text-gray-600">
+            <h4 className="mb-4 font-bold text-white">Legal</h4>
+            <ul className="space-y-3 text-zinc-400">
               <li>
-                <Link href="/legal/privacy" className="transition-colors hover:text-black">
+                <Link href="/legal/privacy" className="transition-colors hover:text-white">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/legal/terms" className="transition-colors hover:text-black">
+                <Link href="/legal/terms" className="transition-colors hover:text-white">
                   Terms of Service
                 </Link>
               </li>
@@ -48,12 +48,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-bold text-gray-900">Contact</h4>
-            <ul className="space-y-3 text-gray-600">
+            <h4 className="mb-4 font-bold text-white">Contact</h4>
+            <ul className="space-y-3 text-zinc-400">
               <li>
                 <a
                   href={`mailto:${site.company.email}`}
-                  className="transition-colors hover:text-black"
+                  className="transition-colors hover:text-white"
                 >
                   {site.company.email}
                 </a>
@@ -63,8 +63,8 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-8 md:flex-row">
-          <p className="text-sm text-gray-500">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
+          <p className="text-sm text-zinc-500">
             © {currentYear} {site.company.name}. All rights reserved.
           </p>
         </div>

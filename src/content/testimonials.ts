@@ -1,23 +1,23 @@
 export const testimonials = [
   {
     quote:
-      "We were amazed by how realistic our baby portrait looked! It captured features from both of us perfectly. Can't wait to meet our little one!",
-    name: 'Sarah & Mike',
-    role: 'Expecting parents',
+      'The score breakdown made the app feel practical instead of vague. I finally had a clear plan for skin, grooming, and presentation.',
+    name: 'Sarah M.',
+    role: 'Early user',
     rating: 5,
   },
   {
     quote:
-      "This app is incredible! We generated portraits with different settings and saved our favorites. It's like peeking into the future!",
-    name: 'Jessica L.',
-    role: 'New mom',
+      'The haircut tracking and routine reminders are the part I keep coming back to. It helped me make better choices week to week.',
+    name: 'Javier L.',
+    role: 'Beta tester',
     rating: 5,
   },
   {
     quote:
-      'Privacy was my biggest concern, but GenKid handles everything securely. The results are stunning and the process is so easy.',
-    name: 'David & Emma',
-    role: 'Happy users',
+      'LooksUP feels like a personal appearance coach. The category breakdown is detailed, but the recommendations stay easy to act on.',
+    name: 'Emma T.',
+    role: 'Look-focused user',
     rating: 5,
   },
 ];

@@ -5,7 +5,6 @@ import { AppStoreButtons } from '@/components/ui/AppStoreButtons';
 import { site } from '@/content/site';
 import Image from 'next/image';
 
-// Detect OS
 function getOS(): 'ios' | 'android' | 'other' {
   if (typeof window === 'undefined') return 'other';
   const ua = navigator.userAgent.toLowerCase();
@@ -21,8 +20,7 @@ export default function DownloadPage() {
   const attemptedRef = useRef(false);
 
   // Store URLs
-  const APP_STORE_URL = site.store.iosUrl; // e.g. https://apps.apple.com/app/xxx
-  // const PLAY_STORE_URL = site.store.androidUrl; // e.g. https://play.google.com/store/apps/details?id=xxx
+  const APP_STORE_URL = site.store.iosUrl;
 
   useEffect(() => {
     if (attemptedRef.current) return;
@@ -32,9 +30,6 @@ export default function DownloadPage() {
     if (os === 'ios') {
       window.location.href = APP_STORE_URL;
     }
-    // else if (os === 'android') {
-    //   window.location.href = PLAY_STORE_URL;
-    // }
 
     // If redirect fails (app store blocked / very slow), show fallback UI
     const timer = setTimeout(() => {
@@ -100,8 +95,8 @@ export default function DownloadPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Influence Slider</h3>
-                  <p className="text-sm text-gray-600">Tune Parent A vs Parent B</p>
+                  <h3 className="font-semibold text-gray-900">Score Breakdown</h3>
+                  <p className="text-sm text-gray-600">Tune into what matters most</p>
                 </div>
               </div>
 
@@ -122,8 +117,8 @@ export default function DownloadPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Gender Choice</h3>
-                  <p className="text-sm text-gray-600">Surprise, boy, or girl</p>
+                  <h3 className="font-semibold text-gray-900">Routines</h3>
+                  <p className="text-sm text-gray-600">Skincare, grooming, confidence</p>
                 </div>
               </div>
 
@@ -144,7 +139,7 @@ export default function DownloadPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Baby Room</h3>
+                  <h3 className="font-semibold text-gray-900">Progress</h3>
                   <p className="text-sm text-gray-600">Save and revisit results</p>
                 </div>
               </div>
@@ -176,7 +171,7 @@ export default function DownloadPage() {
               Download {site.app.name}
             </h1>
             <p className="mb-8 text-lg text-gray-600">
-              Generate a baby portrait from two parent photos.
+              Upload selfies, analyze your appearance, and get a clear improvement plan.
             </p>
 
             <div className="mb-8 flex justify-center">
@@ -202,8 +197,8 @@ export default function DownloadPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Influence Slider</h3>
-                  <p className="text-sm text-gray-600">Tune Parent A vs Parent B</p>
+                  <h3 className="font-semibold text-gray-900">Score Breakdown</h3>
+                  <p className="text-sm text-gray-600">Know what to focus on first</p>
                 </div>
               </div>
 
@@ -224,8 +219,8 @@ export default function DownloadPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Gender Choice</h3>
-                  <p className="text-sm text-gray-600">Surprise, boy, or girl</p>
+                  <h3 className="font-semibold text-gray-900">Routines</h3>
+                  <p className="text-sm text-gray-600">Skincare, grooming, confidence</p>
                 </div>
               </div>
 
@@ -246,8 +241,8 @@ export default function DownloadPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Baby Room</h3>
-                  <p className="text-sm text-gray-600">Save and revisit results</p>
+                  <h3 className="font-semibold text-gray-900">Progress</h3>
+                  <p className="text-sm text-gray-600">Improve over time</p>
                 </div>
               </div>
             </div>

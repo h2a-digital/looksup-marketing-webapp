@@ -9,25 +9,29 @@ export function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section id="gallery" className="bg-white py-24">
+    <section
+      id="gallery"
+      className="relative overflow-hidden bg-[#09090F] py-24"
+    >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(124,58,237,0.12),transparent_30%)]" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="relative mb-16 text-center"
         >
-          <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">
+          <h2 className="mb-4 text-4xl font-black text-white md:text-5xl">
             A Look Inside the App
           </h2>
-          <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            Preview the flow from upload to your saved Baby Room results.
+          <p className="mx-auto max-w-2xl text-xl text-zinc-400">
+            Preview the flow from upload to your saved progress results.
           </p>
         </motion.div>
 
         <div className="mx-auto max-w-sm">
-          <div className="relative rounded-[3rem] bg-gray-900 p-3 shadow-2xl">
-            <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] bg-white">
+          <div className="relative rounded-[3rem] border border-white/10 bg-white/5 p-3 shadow-2xl backdrop-blur-xl">
+            <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] bg-[#11111A]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={selectedIndex}
@@ -47,7 +51,7 @@ export function Gallery() {
                 </motion.div>
               </AnimatePresence>
             </div>
-            <div className="absolute top-0 left-1/2 h-6 w-1/3 -translate-x-1/2 rounded-b-2xl bg-gray-900" />
+            <div className="absolute top-0 left-1/2 h-6 w-1/3 -translate-x-1/2 rounded-b-2xl bg-[#11111A]" />
 
             {/* Nav buttons */}
             <button
@@ -55,7 +59,7 @@ export function Gallery() {
                 setSelectedIndex((prev) => (prev - 1 + gallery.length) % gallery.length)
               }
               type="button"
-              className="absolute top-1/2 -left-16 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-50"
+              className="absolute top-1/2 -left-16 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#11111A] text-white shadow-lg transition-colors hover:bg-[#171720]"
               aria-label="Previous"
             >
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +74,7 @@ export function Gallery() {
             <button
               onClick={() => setSelectedIndex((prev) => (prev + 1) % gallery.length)}
               type="button"
-              className="absolute top-1/2 -right-16 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-50"
+              className="absolute top-1/2 -right-16 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#11111A] text-white shadow-lg transition-colors hover:bg-[#171720]"
               aria-label="Next"
             >
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,8 +97,8 @@ export function Gallery() {
                 type="button"
                 className={`transition-all ${
                   selectedIndex === index
-                    ? 'h-3 w-8 rounded-full bg-black'
-                    : 'h-3 w-3 rounded-full bg-gray-300 hover:bg-gray-400'
+                    ? 'h-3 w-8 rounded-full bg-violet-500'
+                    : 'h-3 w-3 rounded-full bg-white/20 hover:bg-white/35'
                 }`}
                 aria-label={`View image ${index + 1}`}
               />

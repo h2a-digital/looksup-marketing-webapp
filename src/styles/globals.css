@@ -3,6 +3,8 @@
 html,
 body {
   overflow-x: hidden;
+  background: #05050a;
+  color: #f4f4f5;
 }
 
 /* Override font-bold to use 600 instead of 700 */
@@ -34,6 +36,18 @@ body {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+::selection {
+  background: rgba(124, 58, 237, 0.35);
+  color: #ffffff;
+}
+
+body {
+  background-image:
+    radial-gradient(circle at top, rgba(124, 58, 237, 0.16), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(124, 58, 237, 0.08), transparent 22%),
+    linear-gradient(180deg, #05050a 0%, #09090f 100%);
 }
 
 /* Smooth scroll behavior */

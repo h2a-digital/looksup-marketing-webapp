@@ -1,6 +1,6 @@
 {
-  "name": "GenKid",
-  "short_name": "GenKid",
+  "name": "LooksUP",
+  "short_name": "LooksUP",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#583E00",
-  "background_color": "#583E00",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone"
 }
