@@ -8,9 +8,9 @@ export const site = {
   store: {
     iosUrl: 'https://apps.apple.com/app/id6778427539',
     campaigns: {
-      qM7xK: 'https://apps.apple.com/app/apple-store/id6757938204?pt=128321398&ct=tiktok_bio&mt=8',
-      n4LpT:
-        'https://apps.apple.com/app/apple-store/id6757938204?pt=128321398&ct=instagram_bio&mt=8',
+      t7Kp1: 'https://apps.apple.com/app/apple-store/id6778427539?pt=128321398&ct=tiktok_bio&mt=8',
+      m3Vn9:
+        'https://apps.apple.com/app/apple-store/id6778427539?pt=128321398&ct=instagram_bio&mt=8',
     },
     // androidUrl: 'https://play.google.com/store/apps/details?id=TBD',
   },
